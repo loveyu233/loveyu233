@@ -1,3 +1,1 @@
-<picture>
-  <h1>hello world!</h1>
-</picture>
+  <h1><center>hello world!</center></h1>
