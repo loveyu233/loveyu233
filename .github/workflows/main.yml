@@ -1,9 +1,8 @@
 name: generate animation
-
 on:
   # run automatically every 24 hours
   schedule:
-    - cron: "10 * * * *" 
+    - cron: "0 10 * * *"  # 修复：每天上午10点运行
   
   # allows to manually run the job at any time
   workflow_dispatch:
@@ -12,6 +11,7 @@ on:
   push:
     branches:
     - master
+    - main  # 添加：每次提交到main分支也会运行
     
   
 
