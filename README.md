@@ -1,6 +1,7 @@
-<picture>Add commentMore actions
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/loveyu233/loveyu233/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/loveyu233/loveyu233/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/loveyu233/loveyu233/output/github-contribution-grid-snake.svg">
-  hello world!
-</picture>
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=loveyu233&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=loveyu233&layout=compact&langs_count=8&theme=tokyonight"/>
+</div>
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=loveyu233&theme=tokyonight" alt="GitHub Streak" />
+</div>
