@@ -1,0 +1,65 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Hello World Go Go Go banner</title>
+  <desc id="desc">A colorful profile banner that says hello world go go go.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.45" stop-color="#123047"/>
+      <stop offset="1" stop-color="#ffb86b"/>
+    </linearGradient>
+    <linearGradient id="headline" x1="230" y1="104" x2="972" y2="224" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff7d6"/>
+      <stop offset="0.35" stop-color="#7ee7ff"/>
+      <stop offset="0.7" stop-color="#ffe27a"/>
+      <stop offset="1" stop-color="#ff7a90"/>
+    </linearGradient>
+    <radialGradient id="orbA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(196 72) rotate(55) scale(250 190)">
+      <stop stop-color="#2ee8a6" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#2ee8a6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1008 78) rotate(128) scale(280 180)">
+      <stop stop-color="#ffea7a" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ffea7a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="180%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#02111d" flood-opacity="0.48"/>
+    </filter>
+    <filter id="glow" x="-20%" y="-40%" width="140%" height="200%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.42 0 0 0 0 0.92 0 0 0 0 1 0 0 0 0.9 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" stroke="#ffffff" stroke-opacity="0.06"/>
+    </pattern>
+    <clipPath id="round">
+      <rect width="1200" height="320" rx="38"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <rect width="1200" height="320" fill="url(#orbA)"/>
+    <rect width="1200" height="320" fill="url(#orbB)"/>
+    <path d="M-30 245C155 183 258 300 420 227C592 149 690 54 892 101C1035 134 1123 75 1235 35" stroke="#ffffff" stroke-opacity="0.18" stroke-width="2"/>
+    <path d="M-54 86C133 124 259 12 420 61C587 112 655 211 842 188C1019 166 1080 263 1240 236" stroke="#7ee7ff" stroke-opacity="0.26" stroke-width="3"/>
+
+    <circle cx="102" cy="96" r="7" fill="#fff2a8" opacity="0.9"/>
+    <circle cx="162" cy="222" r="4" fill="#7ee7ff" opacity="0.75"/>
+    <circle cx="1016" cy="218" r="6" fill="#ffffff" opacity="0.7"/>
+    <circle cx="1092" cy="92" r="4" fill="#71ffc7" opacity="0.9"/>
+    <path d="M92 52L101 74L124 79L104 92L107 115L89 100L66 110L75 87L60 70L84 72L92 52Z" fill="#ffe27a" opacity="0.82"/>
+    <path d="M1064 146L1072 164L1092 168L1075 180L1078 200L1062 187L1042 196L1050 176L1037 161L1057 163L1064 146Z" fill="#7ee7ff" opacity="0.76"/>
+
+    <g filter="url(#softShadow)">
+      <rect x="116" y="62" width="968" height="196" rx="34" fill="#071827" fill-opacity="0.52" stroke="#ffffff" stroke-opacity="0.16"/>
+      <text x="600" y="138" text-anchor="middle" font-family="Impact, Trebuchet MS, Verdana, sans-serif" font-size="56" letter-spacing="10" fill="#9befff" opacity="0.88">HELLO WORLD</text>
+      <text x="600" y="218" text-anchor="middle" font-family="Impact, Trebuchet MS, Verdana, sans-serif" font-size="82" letter-spacing="5" fill="url(#headline)" filter="url(#glow)">GO GO GO!</text>
+      <text x="600" y="246" text-anchor="middle" font-family="Trebuchet MS, Verdana, sans-serif" font-size="16" letter-spacing="4" fill="#ffffff" opacity="0.66">BUILDING SMALL THINGS WITH BIG ENERGY</text>
+    </g>
+  </g>
+</svg>
